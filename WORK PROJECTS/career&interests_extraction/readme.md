@@ -22,7 +22,7 @@ In the case of interests I had to categorize the texts in the 50 specified categ
 
 To reach these goals I used Spacy and wrote several useful functions in Python.
 
-[see it](WORK PROJECTS/career&interests_extraction/nk_nlp1_3.py)
+[WORK PROJECTS/career&interests_extraction/nk_nlp1_3.py](https://github.com/nik-kad/portfolio/blob/main/WORK%20PROJECTS/career%26interests_extraction/nk_nlp1_3.py)
 
 I prepared learning data and fine-tuned pretrained models for English and Russian to recognize the words related to professions.
 I also added the layer of text categorization into the models and trained it.
