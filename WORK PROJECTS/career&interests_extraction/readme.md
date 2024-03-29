@@ -5,6 +5,8 @@
 ### NLP Text Classification and Word Classification
 
 
+
+
 The main goal of this project was an information extraction from raw unstructured text.
 
 I got the dataset with the columns which contained an information about clients' career and interests as unstructured text with a lot of unnecessary information.  
@@ -24,7 +26,7 @@ To reach these goals I used [Spacy](https://spacy.io/) and wrote several useful 
 
 [see the code](https://github.com/nik-kad/portfolio/blob/main/WORK%20PROJECTS/career%26interests_extraction/nk_nlp1_3.py)
 
-These classes can help to process and label text data. They include both classical text processing methods like regular expressions, deduplication, mapping, quoting and using NLP-methods based on semantic similarity, finding part-of-speech and sentence dependences, named entity recognition and allow to apply these methods to the collection of texts directly.
+These classes can help to process and label text data. They include both classical text processing methods like regular expressions, deduplication, mapping, quoting and NLP-methods based on semantic similarity, finding part-of-speech and sentence dependences, named entity recognition and allow to apply these methods to the collection of texts directly.
 
 I prepared learning data and fine-tuned pretrained models for English and Russian to recognize the words related to professions.
 I also added the layer of text categorization into the models and trained it.
