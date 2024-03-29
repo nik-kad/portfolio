@@ -1,4 +1,4 @@
-Here I have posted a description of some of my work projects.
+Hi, here I have posted a description of some of my work projects. :computer:
 
 ---
 <p>
