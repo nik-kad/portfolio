@@ -8,9 +8,8 @@ Here I have posted a description of some of my work projects.
 ### NLP Text Classification and Word Classification
 
 
-The main goal of this project was an information extraction from raw unstructured text.
-
-I got dataset with the columns which contained an information about clients' career and interests as unstructured text with a lot of unnecessary information.
+The main goal of this project was an information extraction from raw unstructured text.</b>
+I got the dataset with the columns which contained an information about clients' career and interests as unstructured text with a lot of unnecessary information.
 
 Regarding the career I needed to remain only words meant name of professions.
 
