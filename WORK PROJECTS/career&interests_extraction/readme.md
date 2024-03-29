@@ -4,9 +4,8 @@
 
 ### NLP Text Classification and Word Classification
 
-
-
-
+<br>
+<br>
 The main goal of this project was an information extraction from raw unstructured text.
 
 I got the dataset with the columns which contained an information about clients' career and interests as unstructured text with a lot of unnecessary information.  
