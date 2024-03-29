@@ -10,8 +10,9 @@ The main goal of this project was an information extraction from raw unstructure
 I got the dataset with the columns which contained an information about clients' career and interests as unstructured text with a lot of unnecessary information.  
 Regarding the career I needed to remain only words meant name of professions.
 
-!(https://github.com/nik-kad/portfolio/blob/main/pictures/career_extr_dark.png)
-
+<p>
+  <img width=500" align='left' src="https://github.com/nik-kad/portfolio/blob/main/pictures/career_extr_dark.png">
+</p>
 
 In the case of interests I had to categorize the texts in the 50 specified categories, for example: 'Astronomy and space', 'Sports and fitness', 'Stocks, investment opportunities, investing money', etc.
 
