@@ -11,7 +11,7 @@ Here I have posted a description of some of my work projects.
 The main goal of this project was an information extraction from raw unstructured text.<br>
 I got the dataset with the columns which contained an information about clients' career and interests as unstructured text with a lot of unnecessary information.  
 Regarding the career I needed to remain only words meant name of professions.\
-In the case of interests I had to categorize the texts in 50 specified categories.
+In the case of interests I had to categorize the texts in the 50 specified categories.
 
 
 ---
