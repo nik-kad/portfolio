@@ -23,7 +23,7 @@ In the case of interests I had to categorize the texts in the 50 specified categ
 
 To reach these goals I used [Spacy](https://spacy.io/) and wrote several useful functions in Python.
 
-[see the code](https://github.com/nik-kad/portfolio/blob/main/WORK%20PROJECTS/career%26interests_extraction/nk_nlp1_3.py)
+[see the code (my tools)](https://github.com/nik-kad/portfolio/blob/main/WORK%20PROJECTS/career%26interests_extraction/nk_nlp1_3.py)
 
 These classes can help to process and label text data. They include both classical text processing methods like regular expressions, deduplication, mapping, quoting and NLP-methods based on semantic similarity, finding part-of-speech and sentence dependences, named entity recognition and allow to apply these methods to the collection of texts directly.
 
