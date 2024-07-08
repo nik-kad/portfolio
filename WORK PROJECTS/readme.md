@@ -5,7 +5,7 @@ Hi, here I have posted a description of some of my work projects. :computer:
   <img width="400" align='left' src="https://github.com/nik-kad/portfolio/blob/main/pictures/text_classification.jpg">
 </p>
 
-### NLP Text Classification and Word Classification
+### NLP Text and Word Classification
 
 
 The main goal of this project was an information extraction from raw unstructured text.
