@@ -2,7 +2,7 @@
   <img width=200" align='left' src="https://github.com/nik-kad/portfolio/blob/main/pictures/text_classification.jpg">
 </p>
 
-### NLP Text Classification and Word Classification
+### NLP Text and Word Classification
 
 <br>
 <br>
