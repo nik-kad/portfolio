@@ -9,7 +9,7 @@
 The main goal of this project was an information extraction from raw unstructured text.
 
 I got the dataset with the columns which contained an information about clients' career and interests as unstructured text with a lot of unnecessary information.  
-Regarding the career I needed to remain only words meant name of professions.
+Considering the career I needed to remain only words meant name of professions.
 
 <p>
   <img align='center' src="https://github.com/nik-kad/portfolio/blob/main/pictures/career_extr_dark.png">
