@@ -11,7 +11,7 @@ Hi, here I have posted a description of some of my work projects. :computer:
 The main goal of this project was an information extraction from raw unstructured text.
 
 I got the dataset with the columns which contained an information about clients' career and interests as unstructured text with a lot of unnecessary information.  
-Regarding the career I needed to remain only words meant name of professions.  
+Considering the career I needed to remain only words meant name of professions.  
 In the case of interests I had to categorize the texts in the 50 specified categories, for example: 'Astronomy and space', 'Sports and fitness', 'Stocks, investment opportunities, investing money', etc.
 
 To reach these goals I used Spacy and wrote several useful functions in Python.  
