@@ -1,12 +1,24 @@
-# Портфолио
+Hi, here I have posted a description of some of my work projects. :computer:
 
-В репозитории представлены некоторые из проектов, которые я выполнял в процессе обучения на курсах DataScience в Яндекс Практикум и МГТУ им. Баумана
+---
+<p>
+  <img width="400" align='left' src="https://github.com/nik-kad/portfolio/blob/main/pictures/text_classification.jpg">
+</p>
 
-| Название проекта | Описание | Используемые библиотеки | 
-| :---------------------- | :---------------------- | :---------------------- |
-| [Прогнозирование оттока клиентов телекоммуникационной компании](Yandex/telecom_churn) | Обучение и тестирование моделей с целью прогнозирования оттока абонентов с использованием исторических данных по пользованию услугами абонентов, параметров контрактов и личной информации абонентов| *pandas, os, numpy, datetime, matplotlib, seaborn, sklearn, catboost, lightGBM* |
-| [Определение жанров музыкальных композиций](MGTU/genre_identification) | Выделение признаков из аудиотреков для обучения и тестирования моделей| *librosa, os, IPython, zipfile, numpy, matplotlib, seaborn, sklearn, tensorflow* |
-| [Новый сервис для «Викишоп»](Yandex/toxic_comments) | Обучение и выбор лучшей модели для определения токсичных комментариев в работе нового сервиса интернет-магазина| *pandas, os, numpy, sklearn, lightGBM, nltk, re* |
-| [Прогнозирование размеров сварного шва](MGTU/weld_size) | Анализ и предобработка параметров электронно-лучевой сварки с целью обучения моделей предсказаниям размеров будущего сварочного шва. | *pandas, numpy, matplotlib, seaborn, sklearn, tensorflow, lightGBM* |
-| [Прогнозирование заказов такси](Yandex/taxi_orders) | Выделение признаков из временного ряда с количествами заказов такси длиной в 6 месяцев для обучения моделей прогнозированию будущих периодов | *pandas, os, numpy, datetime, matplotlib, statsmodels.tsa.seasonal, sklearn, catboost, lightGBM* |
-| [Увеличение разрешения фотографий без потери качества](MGTU/resolution_increasing) | Масштабирование изображений, используя возможности предобученной генеративно-состязательной сети  | *torch, os, numpy, PIL, matplotlib, RealESRGAN* |
+### NLP Text and Word Classification
+
+
+The main goal of this project was an information extraction from raw unstructured text.
+
+I got the dataset with the columns which contained an information about clients' career and interests as unstructured text with a lot of unnecessary information.  
+Considering the career I needed to remain only words meant name of professions.  
+In the case of interests I had to categorize the texts in the 50 specified categories, for example: 'Astronomy and space', 'Sports and fitness', 'Stocks, investment opportunities, investing money', etc.
+
+To reach these goals I used Spacy and wrote several useful functions in Python.  
+I prepared learning data and fine-tuned pretrained models for English and Russian to recognize the words related to professions.
+I also added the layer of text categorization into the models and trained it.
+The trained models show a good ability to generalize.
+
+[Learn more...](https://github.com/nik-kad/portfolio/blob/main/pictures/text_classification.jpg)
+
+---
