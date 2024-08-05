@@ -64,5 +64,8 @@ Using `ReportCreator` you can build a complex report consists of data from diffe
 You can see the whole Jupyter notebook of this practical example with my comments [here](excelwriter_example.ipynb).
 
 You can also see the code of my module `excel_report_creator` [here](excel_report_creator.py). 
-
-
+| Description | File |
+|---:|----|
+| Source data | [british_sells_data.csv](british_sells_data.csv) |
+| Template | [bs_template2.xlsx](bs_template2.xlsx) |
+| Result report | [sales_report.xlsx](sales_report.xlsx) |
