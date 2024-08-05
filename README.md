@@ -22,3 +22,12 @@ The trained models show a good ability to generalize.
 [Learn more...](https://github.com/nik-kad/portfolio/blob/main/pictures/text_classification.jpg)
 
 ---
+<p>
+  <img width="400" align='left' src="./pictures/photo_2024-08-05_10-26-15_2.jpg">
+</p>
+
+### Excel Report Writer
+
+
+Excel is still a popular data analysis and visualization tool which is used by many employees in many companies. 
+Sometimes we need to write complex Excel reports from Python.
