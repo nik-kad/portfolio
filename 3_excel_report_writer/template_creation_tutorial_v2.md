@@ -20,7 +20,7 @@ report_date = 29.03.2024
 ```
 are substituting into corresponding places of the string.
 
-**2. arrays** – this type of anchors is used to substitute the values of the array into the cells, starting from the given cell and moving into the specified direction.
+**2. arrays** – this type of anchors is used to substitute the values of the array in the cells, starting from the given cell and moving into the specified direction.
 It can work both with 1D –arrays and with 2D-arrays.
 Datatype, style, format in the finally written array are defined by ones from the template anchor cell.
     
