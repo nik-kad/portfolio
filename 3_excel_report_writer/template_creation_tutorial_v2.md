@@ -81,25 +81,26 @@ Example 5:
 or names to order them.
 It works for one column number or name too.
 
-Example 6:
+Example 6:  
 
-To build the report with merged cells we should create them in the template and this merge will spread to the corresponding array. To work with alternating values from different columns (price, quantity) we should use special parameter “sn” where n – a size of the step.
+![](./pictures/image025.png)
 
-Example 7:
+To build the report with the merged cells we should create them in the template and this merge will spread to the corresponding array. To work with the alternating values from different columns (price, quantity) we should use the special parameter `sn` where `n` – a size of the step.  
+
+Example 7:  
+
+![](./pictures/image027.png)
  
-In this example we use step = 3 cells for alternating values, vertical and horizontal merges and “i” parameter in the first data column to save border cells from rewriting.
+In this example we use the step = 3 cells for the alternating values, vertical and horizontal merges and `i` parameter in the first data column to save the border cells from rewriting.
 
+Example 8:  
 
-
-
-
-
-Example 8:
+![](./pictures/image029.png)  
 
 We can build the report that contains as many different tables from different sources as we can imagine. Tables can locate either on one sheet or on many sheets. If you want to create the report that contains several sheets you should create the template with this number of sheets.
 
 
-3) pivot table - this type of anchors is used to create and write into Excel a pivot table.
+**3. pivot table** - this type of anchors is used to create and write into Excel a pivot table.
 The syntax is similar to ‘array’ type, but we should put ‘pt’ characters instead of ‘t’ before a table number. 
 Besides a new type of the orientation appears for pivot table – ‘v’  means ‘values’. So, you should specify as minimum three types of arrays: ‘rows’, ‘columns’ and ‘values’ to get a pivot table.
 
