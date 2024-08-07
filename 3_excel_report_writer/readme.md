@@ -9,12 +9,7 @@ Excel is simple and doesn't require special skills. Many companies still use Exc
 
 For example, you are an experienced data analyst and can use different advanced data analysis tools. You can build a report or a dashboard using special software, but you should be sure that your boss or colleagues have this special software and they know how to use it(how to open your report as minimum). In the case with external partners the probability that they have this software tends to zero.
 
-
-<p align="right">
-    <img src="./pictures/p_to_ex.png" width="100" >
-</p>
-
-So Excel format is still popular, and if you work as data analyst and use Python like me you can get the tasks where you need to save Excel reports from Python.  
+<img src="./pictures/p_to_ex.png" width="300" align="right"> So Excel format is still popular, and if you work as data analyst and use Python like me you can get the tasks where you need to save Excel reports from Python.  
 
 Often, for building Excel report you only need to save a simple plain table in '.xlsx' file, but you can't always go this way.  
 Sometimes, you need to build more complex report which contains several tables with different lengths and format on one or many sheets. For this, you need to put data in the specified places of the sheet and to format them in style needed.  
@@ -29,7 +24,7 @@ If the building of such reports is one-time task, you can bring together and for
 But in case of regular reports building this task can evolve into laborious routine, that in its turn significally increases a risk of manual work errors.  
 To automate this task and to minimize manual work risks I developed a special python module `excel_report_creator` that can help to build as complex Excel report as you need.
 
-The module uses a special Excel file - template which contains a structure and format of the future report. The template should be written using not complicated rules according to the tutorial.  
+The module uses a special Excel file - template which contains a structure and format of the future report. The template should be written using not complicated rules according to the [tutorial](./template_creation_tutorial_v2.md).  
 <p align="center">
     <img src="./pictures/2024-08-02_13-11-13.png" alt="template example" width="500"><br>
     <em>The template example</em>
