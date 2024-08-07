@@ -11,9 +11,7 @@ For example, you are an experienced data analyst and can use different advanced 
 
 
 <p align="right">
-    <img src="./pictures/Python-logo-notext.svg.png" alt="template example" width="100" >
-    <img src="./pictures/m-fone-20.png" alt="template example" width="70" >
-    <img src="./pictures/excel_l.png" alt="template example" width="100" >
+    <img src="./pictures/p_to_ex.png" width="100" >
 </p>
 
 So Excel format is still popular, and if you work as data analyst and use Python like me you can get the tasks where you need to save Excel reports from Python.  
