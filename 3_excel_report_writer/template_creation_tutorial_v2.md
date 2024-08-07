@@ -4,11 +4,13 @@ A template is used to define locations of report elements, their styles and form
 
 **1. simple variables** - this type of anchors is used to substitute the values of simple variables to a report. Variables can have different types: string, int, float, datetime, even list or dict.
     
-Syntax: `%%simple_var_name%%`
+*Syntax:*  
+`%%simple_var_name%%`
       
 All types of source variables are transformed to *string* type and substitute into the given place of the string in the cell. If the string in the cell has several simple variables, all of them will be handled. The name between symbols `%%` is used for matching.
 
-Examples: 
+*Examples:*  
+
 ![](./pictures/image002.jpg)  
 
 As we can see on this picture the given variables:
@@ -22,7 +24,7 @@ are substituting into corresponding places of the string.
 It can work both with 1D –arrays and with 2D-arrays.
 Datatype, style, format in the finally written array are defined by ones from the template anchor cell.
     
-Syntax:
+*Syntax:*  
 ```
 for 1D-arrays: [[t1.col_name/rcius*]]
 for 2D-arrays: [[t4(3:6)/rcius*]]
@@ -30,40 +32,51 @@ for 2D-arrays: [[t5(2, 4, 5)/rcius*]]
 for 2D-arrays: [[t6(col_name3, col_name5, col_name8)/rcius*]]
 ```
 
-`tn` – where n - the specified table number from the set of tables. You can use one or more data tables to build a report.
-`col_name` - the specified column name of the table defined by the table_name
-`(3:6)` – the slice of the table defined by the table_name (2D-array)
-`r` or `c` or nothing – the orientation of the writing direction. 
-`r` – means that the script will write cells in the vertical direction
-`c` – means that the script will write cells in the horizontal direction
-the lack of these keys means using the default mode which is `r`
-`i` – means *insert cells*. This mode adds cells after writing and let avoid erasing following data
-`u` – means *update cells*. This is the default mode when the script simply writes data in the specified direction.
-`*` - means that if the written array has two or more equal values located steadily, these values will be merged in one total cell.
-`s` – means step of writing. We should put a number after the letter `s` to specify a step. It looks like `sn` *(s2, s5, s12)*, where `n` – a size of the step.
+`tn` – where n - the specified table number from the set of tables. You can use one or more data tables to build a report.  
+`col_name` - the specified column name of the table defined by the table_name  
+`(3:6)` – the slice of the table defined by the table_name (2D-array)  
+`r` or `c` or nothing – the orientation of the writing direction.  
+`r` – means that the script will write cells in the vertical direction  
+`c` – means that the script will write cells in the horizontal direction  
+the lack of these keys means using the default mode which is `r`  
+`i` – means *insert cells*. This mode adds cells after writing and let avoid erasing following data  
+`u` – means *update cells*. This is the default mode when the script simply writes data in the specified direction.  
+`*` - means that if the written array has two or more equal values located steadily, these values will be merged in one total cell.  
+`s` – means step of writing. We should put a number after the letter `s` to specify a step. It looks like `sn` *(s2, s5, s12)*, where `n` – a size of the step.  
 
-Examples:
+*Examples:*  
 
-Source data (table1):         
+Source data (table1):  
+
+![](./pictures/image003.png)
 
 Example 1:
 
-  The data from table1 substitutes into template using the column names mapping.
-      
-  Example 2:
-      
-      
-  Using a key ‘c’ affords to change data representation in the horizontal direction.
-We also need to insert columns not to rewrite the right column with labels. We use the mode “insert” and the anchor “i” in the template.
+![](./pictures/image006.jpg)![](./pictures/image008.jpg)
 
-Example 3:
+  The data from the table1 substitutes into the template using the column names mapping.
+      
+Example 2:
 
+![](./pictures/image010.jpg)![](./pictures/image012.jpg)  
+
+Using the key `c` affords changing data representation in the horizontal direction.
+We also need to insert columns not to rewrite the right column with the labels. We use the mode “insert” and the anchor `i` in the template.
+
+Example 3:  
+
+![](./pictures/image014.jpg)![](./pictures/image016.jpg)  
 Using a slice in the template affords to pass to the script two columns at once, but we can’t specify styles for these columns separately in this case. 
 
-Example 4:
+Example 4:  
 
-We can use a list of column numbers 
-Example 5:
+![](./pictures/image018.jpg)![](./pictures/image020.jpg) 
+
+We can use the list of the column numbers 
+
+Example 5:  
+
+![](./pictures/image022.jpg)![](./pictures/image024.jpg) 
 
 or names to order them.
 It works for one column number or name too.
