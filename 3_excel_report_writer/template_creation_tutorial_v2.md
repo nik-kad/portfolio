@@ -133,11 +133,12 @@ Source data (table2):
 
 Example 10:  
 
-           
+![](./pictures/Untitled-2024-02-18-1653.png)  
 
-We can build more complex pivot tables combining data in index and columns.
+We can build more complex pivot table combining data in the index and columns.
 
 Example 11:
-           
 
-If we need to add names of values into the pivot table, we should put a special anchor into a template. This anchor contains the service name ‘__VAL_NAMES__’, which messages to the script about this action.
+![](./pictures/Untitled-2024-02-18-1653_2.png) 
+
+If we need to add names of the values into the pivot table, we should put a special anchor into the template. This anchor contains the service name `__VAL_NAMES__`, which messages to the script about this action.
