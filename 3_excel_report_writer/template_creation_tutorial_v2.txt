@@ -1,20 +1,23 @@
+## Template creation tutorial
+
 A template is used to define locations of report elements, their styles and formatting and consist of reports headers and special anchors. These anchors have the certain syntax and are divided into 3 categories:
 
-1) simple variables ñ this type of anchors is used to substitute the values of simple variables to a report. Variables can have different types: string, int, float, datetime, even list or dict.
+1) **simple variables** - this type of anchors is used to substitute the values of simple variables to a report. Variables can have different types: string, int, float, datetime, even list or dict.
  
-Syntax: %%simple_var_name%%
+Syntax: `%%simple_var_name%%`
       
-All types of source variables are transformed to ëstringí type and substitute into the given place of the string in a cell. If the string in a cell has several simple variables all of them will be handled. The name between symbols ë%%í is used for matching.
+All types of source variables are transformed to *string* type and substitute into the given place of the string in the cell. If the string in the cell has several simple variables, all of them will be handled. The name between symbols `%%` is used for matching.
 
 Examples: 
+![](./pictures/image002.jpg)  
 
 As we can see on this picture the given variables:
 report_number = 777
 report_date = 29.03.2024
 are substituting into corresponding places of the string.
 
-2) arrays ñ this type of anchors is used to substitute the values of an array into cells, starting from the given cell and moving into the specified direction.
-It can work both with 1D ñarrays and with 2D-arrays.
+2) arrays ‚Äì this type of anchors is used to substitute the values of an array into cells, starting from the given cell and moving into the specified direction.
+It can work both with 1D ‚Äìarrays and with 2D-arrays.
 Datatype, style, format in the finally written array are defined by ones from a template anchor cell.
     
 Syntax:
@@ -23,17 +26,17 @@ for 2D-arrays: [[t4(3:6)/rcius*]]
 for 2D-arrays: [[t5(2, 4, 5)/rcius*]]
 for 2D-arrays: [[t6(col_name3, col_name5, col_name8)/rcius*]]
 
-tn ñ where n - the specified table number from the set of tables. You can use one or more data tables to build a report.
+tn ‚Äì where n - the specified table number from the set of tables. You can use one or more data tables to build a report.
 col_name - the specified column name of the table defined by table_name
-(3:6) ñ the slice of the table defined by table_name (2D-array)
-r or c or nothing ñ the orientation of writing direction. 
-r ñ means that the script will write cells in the set of rows or in the vertical direction
-c ñ means that the script will write cells in the set of columns or in the horizontal direction
-the lack of these keys means using the default mode which is ërí
-i ñ means ëinsert cellsí. This mode adds cells after writing and let avoid erasing following data
-u ñ means ëupdate cellsí. This is the default mode when the script simply writes data in the specified direction.
+(3:6) ‚Äì the slice of the table defined by table_name (2D-array)
+r or c or nothing ‚Äì the orientation of writing direction. 
+r ‚Äì means that the script will write cells in the set of rows or in the vertical direction
+c ‚Äì means that the script will write cells in the set of columns or in the horizontal direction
+the lack of these keys means using the default mode which is ‚Äòr‚Äô
+i ‚Äì means ‚Äòinsert cells‚Äô. This mode adds cells after writing and let avoid erasing following data
+u ‚Äì means ‚Äòupdate cells‚Äô. This is the default mode when the script simply writes data in the specified direction.
 * - means that if a written array has two or more equal values located steadily these values will merge in one total cell.
-s ñ means step of writing. We should put a number after the letter ësí to specify a step. It looks like ësní (s2, s5, s12), where n ñ a size of the step.
+s ‚Äì means step of writing. We should put a number after the letter ‚Äòs‚Äô to specify a step. It looks like ‚Äòsn‚Äô (s2, s5, s12), where n ‚Äì a size of the step.
 
 Examples:
 
@@ -46,12 +49,12 @@ Example 1:
   Example 2:
       
       
-  Using a key ëcí affords to change data representation in the horizontal direction.
-We also need to insert columns not to rewrite the right column with labels. We use the mode ìinsertî and the anchor ìiî in the template.
+  Using a key ‚Äòc‚Äô affords to change data representation in the horizontal direction.
+We also need to insert columns not to rewrite the right column with labels. We use the mode ‚Äúinsert‚Äù and the anchor ‚Äúi‚Äù in the template.
 
 Example 3:
 
-Using a slice in the template affords to pass to the script two columns at once, but we canít specify styles for these columns separately in this case. 
+Using a slice in the template affords to pass to the script two columns at once, but we can‚Äôt specify styles for these columns separately in this case. 
 
 Example 4:
 
@@ -63,11 +66,11 @@ It works for one column number or name too.
 
 Example 6:
 
-To build the report with merged cells we should create them in the template and this merge will spread to the corresponding array. To work with alternating values from different columns (price, quantity) we should use special parameter ìsnî where n ñ a size of the step.
+To build the report with merged cells we should create them in the template and this merge will spread to the corresponding array. To work with alternating values from different columns (price, quantity) we should use special parameter ‚Äúsn‚Äù where n ‚Äì a size of the step.
 
 Example 7:
  
-In this example we use step = 3 cells for alternating values, vertical and horizontal merges and ìiî parameter in the first data column to save border cells from rewriting.
+In this example we use step = 3 cells for alternating values, vertical and horizontal merges and ‚Äúi‚Äù parameter in the first data column to save border cells from rewriting.
 
 
 
@@ -80,8 +83,8 @@ We can build the report that contains as many different tables from different so
 
 
 3) pivot table - this type of anchors is used to create and write into Excel a pivot table.
-The syntax is similar to ëarrayí type, but we should put ëptí characters instead of ëtí before a table number. 
-Besides a new type of the orientation appears for pivot table ñ ëví  means ëvaluesí. So, you should specify as minimum three types of arrays: ërowsí, ëcolumnsí and ëvaluesí to get a pivot table.
+The syntax is similar to ‚Äòarray‚Äô type, but we should put ‚Äòpt‚Äô characters instead of ‚Äòt‚Äô before a table number. 
+Besides a new type of the orientation appears for pivot table ‚Äì ‚Äòv‚Äô  means ‚Äòvalues‚Äô. So, you should specify as minimum three types of arrays: ‚Äòrows‚Äô, ‚Äòcolumns‚Äô and ‚Äòvalues‚Äô to get a pivot table.
 
 Syntax:
 for 1D-arrays: [[pt2.col_name/rcviu*]]
@@ -110,4 +113,4 @@ We can build more complex pivot tables combining data in index and columns.
 Example 11:
            
 
-If we need to add names of values into the pivot table, we should put a special anchor into a template. This anchor contains the service name ë__VAL_NAMES__í, which messages to the script about this action.
+If we need to add names of values into the pivot table, we should put a special anchor into a template. This anchor contains the service name ‚Äò__VAL_NAMES__‚Äô, which messages to the script about this action.
