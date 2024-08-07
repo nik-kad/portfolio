@@ -101,20 +101,26 @@ We can build the report that contains as many different tables from different so
 
 
 **3. pivot table** - this type of anchors is used to create and write into Excel a pivot table.
-The syntax is similar to ‘array’ type, but we should put ‘pt’ characters instead of ‘t’ before a table number. 
-Besides a new type of the orientation appears for pivot table – ‘v’  means ‘values’. So, you should specify as minimum three types of arrays: ‘rows’, ‘columns’ and ‘values’ to get a pivot table.
+The syntax is similar to *array* type, but we should put `pt` characters instead of `t` before the table number. 
+Besides, the new type of the orientation appears for pivot table – `v`  means *values*. So you should specify as minimum three types of arrays: *rows*, *columns* and *values* to get a pivot table.
 
-Syntax:
+*Syntax:*
+```
 for 1D-arrays: [[pt2.col_name/rcviu*]]
 for 2D-arrays: [[pt4(3:6)/rcviu*]]
 for 2D-arrays: [[pt5(2, 4, 5)/rcviu*]]
 for 2D-arrays: [[pt12(col_name3, col_name5, col_name8)/rcviu*]]
+```
 
-Examples:
+*Examples:*  
 
-Source data (table1):   
+Source data (table1):  
 
-Example 9:
+![](./pictures/image003.png)
+
+Example 9:  
+
+![](./pictures/image032.png)
 
  As we can see in the picture above we built the simple pivot table that can grow either in vertical or horizontal direction if data changes.
 
