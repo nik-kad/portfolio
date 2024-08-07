@@ -2,8 +2,8 @@
 
 A template is used to define locations of report elements, their styles and formatting and consist of reports headers and special anchors. These anchors have the certain syntax and are divided into 3 categories:
 
-1) **simple variables** - this type of anchors is used to substitute the values of simple variables to a report. Variables can have different types: string, int, float, datetime, even list or dict.
- 
+**1. simple variables** - this type of anchors is used to substitute the values of simple variables to a report. Variables can have different types: string, int, float, datetime, even list or dict.
+    
 Syntax: `%%simple_var_name%%`
       
 All types of source variables are transformed to *string* type and substitute into the given place of the string in the cell. If the string in the cell has several simple variables, all of them will be handled. The name between symbols `%%` is used for matching.
@@ -12,31 +12,35 @@ Examples:
 ![](./pictures/image002.jpg)  
 
 As we can see on this picture the given variables:
+```
 report_number = 777
 report_date = 29.03.2024
+```
 are substituting into corresponding places of the string.
 
-2) arrays – this type of anchors is used to substitute the values of an array into cells, starting from the given cell and moving into the specified direction.
+**2. arrays** – this type of anchors is used to substitute the values of the array into the cells, starting from the given cell and moving into the specified direction.
 It can work both with 1D –arrays and with 2D-arrays.
-Datatype, style, format in the finally written array are defined by ones from a template anchor cell.
+Datatype, style, format in the finally written array are defined by ones from the template anchor cell.
     
 Syntax:
+```
 for 1D-arrays: [[t1.col_name/rcius*]]
 for 2D-arrays: [[t4(3:6)/rcius*]]
 for 2D-arrays: [[t5(2, 4, 5)/rcius*]]
 for 2D-arrays: [[t6(col_name3, col_name5, col_name8)/rcius*]]
+```
 
-tn – where n - the specified table number from the set of tables. You can use one or more data tables to build a report.
-col_name - the specified column name of the table defined by table_name
-(3:6) – the slice of the table defined by table_name (2D-array)
-r or c or nothing – the orientation of writing direction. 
-r – means that the script will write cells in the set of rows or in the vertical direction
-c – means that the script will write cells in the set of columns or in the horizontal direction
-the lack of these keys means using the default mode which is ‘r’
-i – means ‘insert cells’. This mode adds cells after writing and let avoid erasing following data
-u – means ‘update cells’. This is the default mode when the script simply writes data in the specified direction.
-* - means that if a written array has two or more equal values located steadily these values will merge in one total cell.
-s – means step of writing. We should put a number after the letter ‘s’ to specify a step. It looks like ‘sn’ (s2, s5, s12), where n – a size of the step.
+`tn` – where n - the specified table number from the set of tables. You can use one or more data tables to build a report.
+`col_name` - the specified column name of the table defined by the table_name
+`(3:6)` – the slice of the table defined by the table_name (2D-array)
+`r` or `c` or nothing – the orientation of the writing direction. 
+`r` – means that the script will write cells in the vertical direction
+`c` – means that the script will write cells in the horizontal direction
+the lack of these keys means using the default mode which is `r`
+`i` – means *insert cells*. This mode adds cells after writing and let avoid erasing following data
+`u` – means *update cells*. This is the default mode when the script simply writes data in the specified direction.
+`*` - means that if the written array has two or more equal values located steadily, these values will be merged in one total cell.
+`s` – means step of writing. We should put a number after the letter `s` to specify a step. It looks like `sn` *(s2, s5, s12)*, where `n` – a size of the step.
 
 Examples:
 
