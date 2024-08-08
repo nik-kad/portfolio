@@ -1,4 +1,4 @@
-### version 1.3
+### version 1.5
 
 import pandas as pd
 import numpy as np
@@ -38,10 +38,12 @@ class TextPreprocessing:
     ----------
     nlp : spacy model class
         Model for the specified language using for process.
-    text_col : list, tuple, pd.Series
+    text_col : pd.Series
         A list of text data used as an object for the processing.
-    textcol_mod : list, tuple, pd.Series
+    textcol_mod : pd.Series
         A copy of text data used for saving intermediate results.
+    unique_tokens : pd.Series
+        A list of unique tokens extracted from source texts
     LABELS_LIST_RU : list
         The list of named entities for Russian language
     LABELS_LIST_EN : list
@@ -1422,7 +1424,14 @@ class Categorizator:
         metric : str, optional
             If None, uses built-in spacy similarity calculation method(cosine),
             if 'cosine', uses the same method from scikit-learn lib,
-            if 'euclide', uses euclide distances calculation method from scikit-learn(default is None).
+            if 'euclide', uses euclide distances calculation method from scikit-learn(default is None),
+            if 'dict', returns the dictionary with calculated similarity between all tokens,
+            if 'mean', returns the mean of data in the dict above,
+            if 'dict_top{number}' where {number} is a number of top elements which will be returned,
+            if 'mean_top{number}' where {number} is a number of top elements which are averaging,
+            if 'mean_top{number1}_threshold{number2}' - here we specify two condition to filter the results which are averaging then,
+            if 'mean_quantile{number}' - here we use quantile to filter the results which are averaging then
+            if 'mean_quantile{number1}_threshold{number2}' - here we use quantile and threshold to filter the results which are averaging then.
         need_nlp : bool, optional
             If True, nlp-preprocesses a cat and patterns(default is True).
         quoting : list, tuple, pd.Series or None, optional
@@ -1433,6 +1442,10 @@ class Categorizator:
             If True, updates self.pattern_list, self.nlppatterns(default is False).
         only_w_vector : bool, optional
             If True, remains in the result only patterns which have vectors(default is True).
+        sim_func : str, optional
+            It allows to specify the type of similarity calculation function.
+            If 'simple' - self.sim_calc is used,
+            if 'advanced' - self.adv_sim_calc is used.
                         
         Returns
         -------
@@ -1468,7 +1481,7 @@ class Categorizator:
             sim_list = nlppatterns.apply(self.adv_sim_calc, args=(cat_mod, metric))
 
         # result outputs
-        if 'dict' not in metric:
+        if  metric != 'dict':
             result = pd.DataFrame({'patterns': pattern_list, cat: sim_list}).sort_values(cat, ascending=False)
             
         else:
@@ -1812,8 +1825,8 @@ class Categorizator:
                 for pattern in self._progress_visual(pattern_list, aliquot=10):
                     if ratio == 'both':
                         stats = text_col.str.contains(rf'\b{re.escape(pattern)}\b', case=False).agg(['sum', 'mean'])
-                        quotes.append(stats[0])
-                        quotes_ratio.append(stats[1])
+                        quotes.append(stats.iloc[0])
+                        quotes_ratio.append(stats.iloc[1])
                     elif ratio:
                         stats = text_col.str.contains(rf'\b{re.escape(pattern)}\b', case=False).mean()
                         quotes.append(stats)
