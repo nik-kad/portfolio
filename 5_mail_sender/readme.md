@@ -1,6 +1,6 @@
 
 ## Python Mail Sender
-<img src="./pictures/photo_2024-08-06_10-01-01.jpg" width=200 align="left">
+<img src="./pictures/photo_2024-08-06_10-01-01.jpg" width=300 align="left">
 
 
 If you have this kind of task, Python allows sending email messages using builtin libraries (SMTP, email, IMAP).  
