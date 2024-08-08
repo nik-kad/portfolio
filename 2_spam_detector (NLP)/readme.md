@@ -21,7 +21,12 @@ The pipeline of all the process looks so:
 
 
 After loading and preprocessing the source data, I used my class `TextPreprocessing` for data processing.  
-Method `.word_extractor` is used to remain the specified number of the words, which are closest to the set of words or phrases given as argument `pattern`.  
-We can also put some additional parameters into this method to filter words more finely. In this case I used filtering by *parts-of-speech*.  
+Method `.word_extractor` is used to remain the specified number of the words, which are closest to the set of words or phrases given as argument `pattern`. 
+
+Then I use another my class `Categorizator`, which helps to categorize text data by the similarity. The method `cat_sim` calculates similarity between the specified phrase and text_data and sorts them by descending the similarity.  
+
+<img src="./pictures/photo_2024-08-08_15-40-28.jpg" width=300 align="left">
+
+This way almost all spam got located in the top of the table and it helps us to label this data easily and prepare training dataset.  
 
 
