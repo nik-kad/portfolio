@@ -1,4 +1,6 @@
-This project consisted of two tasks:  
+## Spam detection using NLP
+
+<img src="./pictures/photo_2024-08-08_15-40-28.jpg" width=300 align="left">This project consisted of two tasks:  
 
 1) to find spam-messages in the set of texts I received from the client and remove them  
 
