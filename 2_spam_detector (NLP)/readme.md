@@ -24,8 +24,9 @@ After loading and preprocessing the source data, I used my class `TextPreprocess
 Method `.word_extractor` is used to remain the specified number of the words, which are closest to the set of words or phrases given as argument `pattern`. 
 
 Then I used another my class `Categorizator`, which helps to categorize text data by the similarity. The method `cat_sim` calculates similarity between the specified phrase and text_data and sorts them by descending the similarity.  
-
-<img src="./pictures/photo_2024-08-08_15-40-28.jpg" width=300 align="left">
+<p align="center">
+<img src="./pictures/2024-08-08_21-13-08 (2).png" width=700>
+</p>
 
 This way almost all spam got located in the top of the table and it helped me to label this data easily and prepare the training dataset.  
 To estimate this labeling I calculated some metrics:
