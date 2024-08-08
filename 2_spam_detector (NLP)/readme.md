@@ -23,10 +23,26 @@ The pipeline of all the process looks so:
 After loading and preprocessing the source data, I used my class `TextPreprocessing` for data processing.  
 Method `.word_extractor` is used to remain the specified number of the words, which are closest to the set of words or phrases given as argument `pattern`. 
 
-Then I use another my class `Categorizator`, which helps to categorize text data by the similarity. The method `cat_sim` calculates similarity between the specified phrase and text_data and sorts them by descending the similarity.  
+Then I used another my class `Categorizator`, which helps to categorize text data by the similarity. The method `cat_sim` calculates similarity between the specified phrase and text_data and sorts them by descending the similarity.  
 
 <img src="./pictures/photo_2024-08-08_15-40-28.jpg" width=300 align="left">
 
-This way almost all spam got located in the top of the table and it helps us to label this data easily and prepare training dataset.  
+This way almost all spam got located in the top of the table and it helped me to label this data easily and prepare the training dataset.  
+To estimate this labeling I calculated some metrics:
+| Metric | Value |
+|:--|----:|
+| Accuracy| 98.7% |
+| F1 | 80.9% |
+
+Quite a good metrics, but not perfect.  
+
+Next I used the special method `get_train_data` of the class TextPreprocessing to prepare train data.  
+For the model training I took pretrained Spacy model for Russian language and fine-tuned it using obtained train data.  
+After this I tested the fine-tuned model both source and new data. As the new data I used a set of the generated texts which are very similar to the source texts, but the model had never seen them before.
+|Type of Test Data| Metric | Value |
+|:---|:--|----:|
+|Source| Accuracy| 99.5% |
+|Source| F1 | 93.8% |
+|New | Accuracy |66.3%   |
 
 
