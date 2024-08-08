@@ -1,3 +1,5 @@
+## Text Categorization & Information Extraction  
+
 <img src="./pictures/007-300x240.jpg" width=250 align="left">In this project I solved two major tasks:  
 
 <a name="1">1. *Text categorization* - I have a predefined categories list and I need to determine which categories from this list the text belong to. One text can belong to many categories, so it's a kind of multiclassification task. The set of texts for this task contains information about interests of clients, but not only.  
@@ -69,7 +71,7 @@ As we can see the generalization of the models is quite good.
 
 So this models are very good for this certain task, but if you want to use it for other texts, you should fine-tune it with additional examples.
 
-See [notebook](./text_recogn21.ipynb) for details.  
+See [notebook](./project_notebook.ipynb) for details.  
 
 `nk_nlp1_5` [module's code](./nk_nlp1_5.py) 
 
