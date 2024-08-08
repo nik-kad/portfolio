@@ -16,10 +16,12 @@ My module contains two classes:
 
 See help(classname) for details.
 
+The pipeline of all the process looks so:
+<img src="./pictures/pipeline.png" width=1000 align="left">  
+
 
 After loading and preprocessing the source data, I used my class `TextPreprocessing` for data processing.  
 Method `.word_extractor` is used to remain the specified number of the words, which are closest to the set of words or phrases given as argument `pattern`.  
 We can also put some additional parameters into this method to filter words more finely. In this case I used filtering by *parts-of-speech*.  
-
 
 
