@@ -31,4 +31,4 @@ Daily report example
 <img src="./pictures/2024-08-08_20-40-11.png">
 </p>  
 
-See [the code](./event_plot5_8.py) of the script  
+See [the code](./models_prediction_testing (vizualization).py) of the script  
