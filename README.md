@@ -41,11 +41,11 @@ To reach these goals I used SpaCy and wrote a module in Python to make NLP-proce
 
 This project consisted of two tasks:  
 
-1) to find spam-messages in the set of texts I received from the client and remove them  
+1) to find spam-messages in the set of texts I received from the client and to remove them  
 
-2) to build the model which will be able to detect spam-messages
+2) to build a model which will be able to detect spam-messages
 
-To solve these tasks I used pretrained Spacy model for Russian language and my own module in Python.  
+To solve these tasks I used pretrained SpaCy model for the Russian language and my own module in Python.  
 
 [Learn more...](./2_spam_detector%20(NLP,%20Python)/readme.md)
 
@@ -58,7 +58,7 @@ This project was big and long. It included many tasks: ETL, data processing and 
 
 The main purpose of this project was to create a digital advisor for the blast furnace which will help employees to control and manage the furnace.  
 
-I participated in all stages of this project and solved different tasks, the main part of which I can't publish, but here I want to show several examples of the visualization I have done.
+I participated in all stages of this project and solved different tasks, the main part of which I can't publish due to privacy, but here I want to show several examples of the visualization I have done.
 
 [Learn more...](./3_blastfurnace_monitoring%20(dashboard&visualization,%20Python,%20SQL)/readme.md)
 
@@ -70,10 +70,10 @@ I participated in all stages of this project and solved different tasks, the mai
 
 Despite creation a plenty of advanced analytic software, which have many different options for consolidation, processing, analysis and visualization of data, Microsoft Excel is one of the most popular data tools.  
 One of its main advantages is its wide use. If you save a report in Excel standard and send it, with great probability your recipients can open it in their computers.  
- So Excel format is still popular, and if you work as data analyst and use Python like me you can get the tasks where you need to save Excel reports from Python.  
+ So Excel format is still popular, and if you work as a data analyst and use Python like me you can get tasks where you need to save Excel reports from Python.  
 
 
-To automate this task and to minimize manual work risks, I developed a special Python module that can help to build as complex Excel report as you need.
+To automate this task and to minimize manual work risks, I developed a special Python module that can help to build as complex an Excel report as you need.
 
 [Learn more...](./4_excel_report_writer%20(Python)/readme.md)
 
@@ -84,9 +84,9 @@ To automate this task and to minimize manual work risks, I developed a special P
 ### Python Mail Sender
 
 
-If you have this kind of task, Python allows sending email messages using builtin libraries (SMTP, email, IMAP).  
+If you have this kind of task, Python allows sending email messages using built-in libraries (SMTP, email, IMAP).  
 
-To make the work with mailing list easier without deep immersion into these libraries I wrote a small module in Python.  
+To make work with mailing list easier without deep immersion into these libraries I wrote a small module in Python.  
 
 <br></br>
 
