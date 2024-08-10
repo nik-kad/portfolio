@@ -1,4 +1,5 @@
-Hi!  
+Hi!  :wave:
+
 I am Nikolay. I work in the field of data analysis, data science and data engineering.  
 
 I solve tasks connected with NLP, ML in general, ETL, data processing and visualization.  
@@ -21,9 +22,9 @@ In this project I solved two major tasks:
 2. *Information extraction* - I have a column with the texts relative to career information. My task is to extract words that means professions from this texts. I can divide this task on two:
   
 
-* words labeling
-* words extraction according to that label  
-    
+    * words labeling
+    * words extraction according to that label
+      
 Besides, using the results obtained I need to build the model which will detect the objects of two tasks listed above.
 
 To reach these goals I used SpaCy and wrote the module in Python to make NLP-processing of texts more comfortable and automatic and to implement some ideas of this processing.
