@@ -51,7 +51,7 @@ Unfortunately, the result wasn't good and this reported us about a low generaliz
 
 <p align="center">
 Spam-detection result on the unknown data (before enriching)
-<img src="./2024-08-09_14-45-01.png" width=700>
+<img src="./pictures/2024-08-09_14-45-01.png" width=700>
 </p>  
 
 Obviously, that the reason for this problem was connected with the small quantity of spam examples (only 3.8%)  
@@ -63,7 +63,7 @@ Retraining the model on the enriched dataset showed the significantly better res
 
 <p align="center">
 Spam-detection result on the unknown data (after enriching)
-<img src="2024-08-09_14-59-39.png" width=700>
+<img src="./pictures/2024-08-09_14-59-39.png" width=700>
 </p>  
 
 | Metric | Value |
