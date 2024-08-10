@@ -27,8 +27,8 @@ The models predicted a furnace condition and we needed to compare it with the re
 I had to take data from database, create the report and save it into Excel file. And it was a daily task. So I wrote the script which did everything automatically.  
 
 <p align="center">
-Dashboard example
-<img src="./pictures/dash4.png">
+Daily report example
+<img src="./pictures/2024-08-08_20-40-11.png">
 </p>  
 
 See [the code](./event_plot5_8.py) of the script  
