@@ -46,4 +46,35 @@ After this I tested the fine-tuned model both source and new data. As the new da
 |Source| F1 | 93.8% |
 |New | Accuracy |66.3%   |
 
+The new test data consists of only spam-messages, so `f1`-metric didn't make sense and I calculated only `accuracy`.  
+Unfortunately, the result wasn't good and this reported us about a low generalization level of the model in the task of spam detection.  
+
+<p align="center">
+Spam-detection result on the unknown data (before enriching)
+<img src="./2024-08-09_14-45-01.png" width=700>
+</p>  
+
+Obviously, that the reason for this problem was connected with the small quantity of spam examples (only 3.8%)  
+
+To solve this problem I used ChatGPT and YandexGPT to generate new spam-messages similar to the source spam-messages. It was a kind of text augmentation.  
+For this purpose I wrote the special script to connect with the API of these LLM.
+After enriching we obtained about 20% spam-examples.  
+Retraining the model on the enriched dataset showed the significantly better result.  
+
+<p align="center">
+Spam-detection result on the unknown data (after enriching)
+<img src="2024-08-09_14-59-39.png" width=700>
+</p>  
+
+| Metric | Value |
+|:--|----:|
+| Accuracy| 99.4% |
+
+The metric is good and the generalization of this model is significantly better than the generalization of the previous one.  
+
+Spam filter for this chat is ready.
+
+See the full [notebook](spam_detection3p.ipynb).
+
+
 
