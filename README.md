@@ -5,9 +5,9 @@ I am Nikolay. I work in the field of data analysis, data science and data engine
 I solve tasks connected with NLP, ML in general, ETL, data processing and visualization.  
 
 I use Python, SQL and some popular frameworks to solve my tasks: SpaCy, Transformers, Scikit-learn, Tensorflow, Pandas, Matplotlib, Plotly, Dash, etc.
-I also have an experience in working with LLM via API.
+I also have some experience in working with LLM via API.
 
- To demonstrate my skills I posted descriptions of several my work projects. :computer:
+ To demonstrate my skills I posted descriptions of several of my work projects down below. :computer:
 
 ---
 <p>
@@ -18,16 +18,16 @@ I also have an experience in working with LLM via API.
 
 
 In this project I solved two major tasks:  
-1. *Text categorization* - I have a predefined categories list and I need to determine which categories from this list the text belong to. One text can belong to many categories, so it's a kind of multiclassification task. The set of texts for this task contains information about interests of clients, but not only.  
-2. *Information extraction* - I have a column with the texts relative to career information. My task is to extract words that means professions from this texts. I can divide this task on two:
+1. *Text categorization* - I have a predefined list of categories and I need to detect which categories from this list a text belongs to. One text can belong to many categories, so it's a kind of multiclassification task. The set of texts for this task contains information about clients' interests, but some extra information as well.  
+2. *Information extraction* - I have a column with texts which contain career information. My task is to extract words that mean professions from these texts. I can divide this task on two steps:
   
 
     * words labeling
-    * words extraction according to that label
+    * words extraction based on that label
       
-Besides, using the results obtained I need to build the model which will detect the objects of two tasks listed above.
+Besides, using the obtained results I need to build the model which will detect the objects of two tasks listed above.
 
-To reach these goals I used SpaCy and wrote the module in Python to make NLP-processing of texts more comfortable and automatic and to implement some ideas of this processing.
+To reach these goals I used SpaCy and wrote a module in Python to make NLP-processing of texts more comfortable and automatic and to extend some possibilities of this processing.
 
 [Learn more...](./1_career&interests_extraction%20(NLP,%20Python)/readme.md)
 
