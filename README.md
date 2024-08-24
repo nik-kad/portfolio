@@ -29,7 +29,7 @@ Besides, using the obtained results I need to build the model which will detect 
 
 To reach these goals I used SpaCy and wrote a module in Python to make NLP-processing of texts more comfortable and automatic and to extend some possibilities of this processing.
 
-[Learn more...](./1_career&interests_extraction_NLP_ Python/readme.md)
+[Learn more...](./1_career&interests_extraction_NLP_Python/readme.md)
 
 ---
 
