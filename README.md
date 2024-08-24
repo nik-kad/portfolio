@@ -47,7 +47,7 @@ This project consisted of two tasks:
 
 To solve these tasks I used pretrained SpaCy model for the Russian language and my own module in Python.  
 
-[Learn more...](./2_spam_detector%20(NLP,%20Python)/readme.md)
+[Learn more...](./2_spam_detector_NLP_Python/readme.md)
 
 ---
 
@@ -60,7 +60,7 @@ The main purpose of this project was to create a digital advisor for the blast f
 
 I participated in all stages of this project and solved different tasks, the main part of which I can't publish due to privacy, but here I want to show several examples of the visualization I have done.
 
-[Learn more...](./3_blastfurnace_monitoring%20(dashboard&visualization,%20Python,%20SQL)/readme.md)
+[Learn more...](./3_blastfurnace_monitoring_dashboard&visualization_Python_SQL/readme.md)
 
 ---
 <img width="200" align='left' src="./pictures/photo_2024-08-05_10-26-15_2.jpg">
@@ -75,7 +75,7 @@ One of its main advantages is its wide use. If you save a report in Excel standa
 
 To automate this task and to minimize manual work risks, I developed a special Python module that can help to build as complex an Excel report as you need.
 
-[Learn more...](./4_excel_report_writer%20(Python)/readme.md)
+[Learn more...](./4_excel_report_writer_Python/readme.md)
 
 ---
 
@@ -90,6 +90,6 @@ To make work with mailing list easier without deep immersion into these librarie
 
 <br></br>
 
-[Learn more...](./5_mail_sender%20(Python)/readme.md)
+[Learn more...](./5_mail_sender_Python/readme.md)
 
 ---
